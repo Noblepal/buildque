@@ -1,4 +1,3 @@
-<?php session_start();?>
 		<header id="header" class="header">
 
 			<div class="nav-wrap">
@@ -39,7 +38,7 @@
 												<?php
 											}
 										?>
-										
+
 
 								</ul>
 

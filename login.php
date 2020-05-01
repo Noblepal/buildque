@@ -1,15 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-	
+
 <?php
 include('./includes/functions.php');
  include('./includes/head.php');?>
 	<body>
 		<?php include('./includes/preloader.php');?>
 
-		<?php include('./includes/header.php');?>
-		
-		
+		<?php include('./includes/header.php');
+		session_start();?>
+
+
 		<!-- Intro Section -->
  <section class="inner-intro bg-img light-color overlay-before parallax-background">
     <div class="container">
@@ -19,9 +20,9 @@ include('./includes/functions.php');
       		<div class="page-breadcrumb">
 							<a>Home</a>/ <span>Login</span>
 						</div>
-      		
+
       	</div>
-        
+
       </div>
     </div>
   </section>
@@ -50,16 +51,16 @@ include('./includes/functions.php');
         	            </div>
         	            <div class="form-group">
         	              <div class="ui-input-group">
-        	                <input name="password" type="text" required class="form-control">
+        	                <input name="password" type="password" required class="form-control">
         	                <span class="input-bar"></span>
         	                <label>Password</label>
         	              </div>
         	            </div>
         	          </fieldset>
-        	          <input type="submit" name="contractorLogin" class="btn btn-primary"> 
+        	          <input type="submit" name="contractorLogin" class="btn btn-primary">
         	        </form>
         	      </div>
-        	      
+
         	    </div>
         	    <div class="additional-info"> <a href="#/page/signup">Register</a><span class="divider-h"></span><a href="#/page/forgot-password">Forgot your password?</a> </div>
         	  </div>
@@ -68,9 +69,9 @@ include('./includes/functions.php');
       </div>
     </div>
   </div>
-  <!-- End Login Section --> 
-  
-  
+  <!-- End Login Section -->
+
+
  <?php include('./includes/footer.php');?>
 <?php include('./includes/scripts.php');?>
 	</body>

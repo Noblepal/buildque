@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-	
-<?php 
+
+<?php
 include('./includes/functions.php');
-include('./includes/head.php');?>
+#include('./includes/head.php');?>
 	<body>
 		<?php include('./includes/preloader.php');?>
 
-		<?php include('./includes/header.php');?>
-		
+		<?php include('./includes/header.php');
+		session_start();?>
+
 		<!-- Intro Section -->
  <section class="inner-intro bg-img light-color overlay-before parallax-background">
     <div class="container">
@@ -18,14 +19,14 @@ include('./includes/head.php');?>
       		<div class="page-breadcrumb">
 							<a>Home</a>/ <span>Register</span>
 						</div>
-      		
+
       	</div>
-        
+
       </div>
     </div>
   </section>
  <!-- Intro Section End-->
- 
+
   <!-- Login Section -->
   <div id="login" class="ptb ptb-xs-40 page-signin">
     <div class="container">
@@ -40,14 +41,6 @@ include('./includes/head.php');?>
                 </section>
                 <form method="post" class="form-horizontal ng-pristine ng-valid">
                   <fieldset>
-                  	 <div class="form-group">
-                      <div class="ui-input-group">
-                        <input name="category" type="text" required class="form-control">
-                        <span class="input-bar"></span>
-                        <label>Service Type</label>
-                      </div>
-                    </div>
-
                     <div class="form-group">
                       <div class="ui-input-group">
                         <input name="fname" type="text" required class="form-control">
@@ -74,37 +67,6 @@ include('./includes/head.php');?>
 
                     <div class="form-group">
                       <div class="ui-input-group">
-                        <input name="location" type="text" required class="form-control">
-                        <span class="input-bar"></span>
-                        <label>Location</label>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="ui-input-group">
-                        <input name="identity_no" type="number" required class="form-control">
-                        <span class="input-bar"></span>
-                        <label>ID Number</label>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="ui-input-group">
-                        <input name="phonenumber" type="phone" required class="form-control">
-                        <span class="input-bar"></span>
-                        <label>Phone Number</label>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="ui-input-group">
-                        <input name="brief_info" type="text" required  class="form-control">
-                        <span class="input-bar"></span>
-                        <label>Brief information about yourself</label>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="ui-input-group">
                         <input name="password" type="password"  required class="form-control">
                         <span class="input-bar"></span>
                         <label>Password</label>
@@ -117,17 +79,29 @@ include('./includes/head.php');?>
                         <label>Please confirm your password </label>
                       </div>
                     </div>
-                    <div class="spacer"></div>
-                    <div class="form-group checkbox-field">
-                      <label for="check_box" class="text-small">
-                        <input type="checkbox" id="check_box" >
-                        <span class="ion-ios-checkmark-empty22 custom-check"></span> By clicking on sign up, you agree to <a href="javascript:;"><i>terms</i></a> and <a href="javascript:;"><i>privacy policy</i></a></label>
-                    </div>
+
+										<div class="form-group">
+											<div class="ui-input-group">
+												<select class="form-control" name="isContractor" required>
+													<option value="yes" selected>I am a contractor</option>
+													<option value="no" selected>I am a client</option>
+												</select>
+											</div>
+										</div>
+
+
+										<div class="spacer"></div>
+										<div class="form-group checkbox-field">
+											<label for="check_box" class="text-small">
+												<input type="checkbox" id="check_box" required>
+												<span class="ion-ios-checkmark-empty22 custom-check"></span> By clicking on sign up, you agree to <a href="javascript:;"><i>terms</i></a> and <a href="javascript:;"><i>privacy policy</i></a></label>
+										</div>
+
                   </fieldset>
-                  <input type="submit" name="registerContractor" value="Register" class="card-action no-border text-right"> 
+                  <input type="submit" name="registerUser" value="Register" class="card-action no-border text-right">
                 </form>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -135,10 +109,10 @@ include('./includes/head.php');?>
       </div>
     </div>
   </div>
-  <!-- End Login Section -->  
-  
-   
-  
+  <!-- End Login Section -->
+
+
+
  <?php include('./includes/footer.php');?>
 <?php include('./includes/scripts.php');?>
 

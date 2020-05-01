@@ -1,6 +1,7 @@
+<?php include('./includes/functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <?php include('./includes/head.php');?>
 	<body>
 		<?php include('./includes/preloader.php');?>
@@ -148,7 +149,7 @@
 						<p>
 							We provide a platform for users to search for various services online and get reliable results from the comfort of their home.
 						</p>
-						
+
 
 					<div class="col-md-12 col-lg-5">
 						<img src="assets/images/about_us.png" class="repo-full" alt="" />
@@ -188,7 +189,7 @@
 								<div class="datail_show">
 									<h3>Construction Management</h3>
 									<p>
-										
+
 									</p>
 									<a href="#!">Read More</a>
 								</div>
@@ -531,7 +532,7 @@
 		</section>
 		<!-- End Team Section -->
 
-		
+
 
 		<!-- Counter Section -->
 		<div class="fact-counter-wrapper padding ptb-xs-40">
