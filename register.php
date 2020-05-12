@@ -3,7 +3,7 @@
 
 <?php
 include('./includes/functions.php');
-#include('./includes/head.php');?>
+include('./includes/head.php');?>
 	<body>
 		<?php include('./includes/preloader.php');?>
 
